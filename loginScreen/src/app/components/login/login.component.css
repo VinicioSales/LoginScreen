@@ -1,0 +1,143 @@
+.pagina-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-secundaria);
+}
+
+.container-login {
+    width: 23%;
+    height: 75%;
+    background: var(--cor-primaria);
+    border-radius: 2px;
+    box-shadow: 2px 9px 12px 4px rgba(12, 12, 12, 0.25);
+    justify-self: center;
+    align-self: center;
+    padding: 0 20px 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:     13%   
+                            20%
+                            auto
+                            auto
+                            auto
+                            13%
+                            auto
+                            13%;
+    grid-template-areas:    "header"
+                            "titulo"
+                            "email"
+                            "senha"
+                            "esqueci-senha"
+                            "botao-login"
+                            "registre"
+                            "footer";
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+app-botao-tema {
+    position: absolute;
+    right: 0;
+    margin-right: 12px;
+    align-self: start;
+    margin-top: 10px;
+}
+
+.titulo {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 2.14rem;
+    font-family: var(--font-semiBold);
+}
+
+.input-email,
+.input-senha {
+    width: 100%;
+    justify-self: center;
+}
+
+.input-email {
+    grid-area: email;
+}
+
+.input-senha {
+    grid-area: senha;
+    margin-top: 12px;
+}
+
+.esqueci-senha,
+.botao-registre {
+    font-family: var(--font-light);
+    border: none;
+    justify-self: end;
+    align-self: start;
+}
+
+.esqueci-senha {
+    grid-area: esqueci-senha;
+    font-size: 0.85rem;
+    color: var(--cor-secundaria);
+}
+
+.esqueci-senha:hover,
+.botao-registre:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.botao-login {
+    grid-area: botao-login;
+    margin: 20px 0 20px 0;
+    align-self: center;
+}
+
+.registre {
+    grid-area: registre;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.linha {
+    height: 1px;
+    width: 80%;
+    background: var(--cor-secundaria);
+}
+
+.botao-registre {
+    font-size: 1rem;
+    white-space: nowrap;
+    align-self: center;
+    color: var(--cor-secundaria);
+}
+
+.footer {
+    grid-area: footer;
+    font-family: var(--font-light);
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active,
+a:focus {
+    color: inherit;
+}

@@ -1,0 +1,6 @@
+.componente-botao-tema {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    border: none;
+}

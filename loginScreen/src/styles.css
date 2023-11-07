@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    height: 100%;
+    font-size: 14px; 
+    font-family: "Blinker-Regular";
+    --cor-botao: #141414;
+    --cor-botao-hover: #2B2B2B;
+    --cor-texto-botao: #FFF;
+    --botao-verde: #366731;
+    --botao-verde-hover: #21512d;
+}
+
+button{
+    background: none;
+    cursor: pointer;
+}
+:root{
+    --background: #F9F9F9;
+    --drop_shadow: rgba(25, 40, 71, 0.25);
+    --font-regular: 'Blinker-Regular';
+    --font-semiBold: 'Blinker-SemiBold';
+    --font-bold: 'Blinker-Bold';
+    --font-light: 'Blinker-Light';
+    --font-thin: 'Blinker-Thin';
+    --cor-primaria: #FFF;
+    --cor-secundaria: #141414;
+    --cor-terceira: #FFF;
+    --box-shadow: 0 0 0 2px rgba(25, 25, 25, 0.80);
+}
+
+:root .dark-theme{
+    --background: #141414;
+    --cor-terceira: #141414;
+    --drop_shadow:#000000;
+    --cor-primaria: #262626;
+    --cor-secundaria: #FFF;
+    --box-shadow: 0 0 0 2px #FFF;
+    
+}

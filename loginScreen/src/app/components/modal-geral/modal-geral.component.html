@@ -1,0 +1,12 @@
+<div class="background">
+    <div class="container-modal-geral">
+        <p class="mensagem">{{ mensagem }}</p>
+        <app-botao
+            [height]="height"
+            texto="Confirmar"
+            (click)="onClick()"
+            [background]="corBotao"
+            [backgroundHover]="corBotaoHover">
+        </app-botao>
+    </div>
+</div>

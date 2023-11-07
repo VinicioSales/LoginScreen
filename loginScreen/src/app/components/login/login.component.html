@@ -1,0 +1,44 @@
+<app-modal-geral
+    *ngIf="mostrarModal"
+    [mensagem]="mensagemModal"
+    (fecharModal)="handleFecharModal()">
+</app-modal-geral>
+<div class="pagina-login">
+    <div class="container-login">
+        <div class="header">
+            <app-botao-tema></app-botao-tema>
+        </div>
+        <div class="titulo">Login</div>
+        <app-input
+            class="input-email"
+            placeholder="email"
+            (valorChange)="onValorInputChange($event, 'inputEmail')">
+        </app-input>
+        <app-input
+            type="password"
+            class="input-senha"
+            placeholder="senha"
+            (valorChange)="onValorInputChange($event, 'inputSenha')">
+        </app-input>
+        <button
+            class="esqueci-senha"
+            (click)="navegarRotaEsqueciSenha()">
+            Esqueci senha
+        </button>
+        <app-botao
+            width="100%"
+            texto="Login"
+            (click)="onLogin()"
+            class="botao-login">
+        </app-botao>
+        <div class="registre">
+            <div class="linha"></div>
+            <button
+                class="botao-registre"
+                (click)="navegarRotaRegistro()">
+                Registre-se
+            </button>
+            <div class="linha"></div>
+        </div>
+    </div>
+</div>
