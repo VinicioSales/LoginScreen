@@ -1,1 +1,1 @@
-# LoginScreen
+This is a login page developed with Angular, characterized by its clean design and straightforward navigation. The page incorporates best security practices and offers a swift and direct user experience
